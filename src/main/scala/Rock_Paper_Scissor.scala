@@ -1,13 +1,13 @@
 import scala.io.StdIn.readLine
 
-object Rock_Paper_Scissor {
+object Rock_Paper_Scissor extends App {
   def user_choice()={
     var userInput = readLine("Enter a choice (Rock/Paper/Scissors): ")
     userInput.toLowerCase
     if(userInput == "rock" || userInput == "paper" || userInput == "scissors"){
-      userInput
+      println(userInput)
     } else {
-      "Error"
+      println("Error...please select from the options given!")
     }
   }
 
@@ -21,25 +21,32 @@ object Rock_Paper_Scissor {
   }
   def determineWinner(userChoice: String, computerChoice: String) {
     if(userChoice == computerChoice) {
-       "The game was a tie"
+      println("The game was a tie")
     }
     if(userChoice == "rock" && computerChoice == "paper") {
-      "Computer won this round!"
+      println("Computer won this round!")
     } else {
-       "You won!"
+      println("You won!")
     }
     if(userChoice == "scissors" && computerChoice == "rock") {
-      "Computer won this round!!"
+      println("Computer won this round!!")
     } else {
-       "You Won!"
+      println("You Won!")
     }
-
     if(userChoice == "paper" && computerChoice == "scissors"){
-      "Computer won this round"
+      println("Computer won this round")
     } else {
-       "You Won"
+      println("You Won")
     }
   }
+  def playGame() = {
+    val userChoice = user_choice()
+    val computerChoice = getComputerChoice()
+    println("You threw: " + userChoice)
+    println("The computer threw: " + computerChoice)
+
+  }
+  playGame()
 }
 
 
