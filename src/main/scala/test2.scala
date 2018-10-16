@@ -18,18 +18,4 @@ object test2 extends App {
 
   }
 
-//  def availId() = {
-//    val avail = getAvailableIDs()
-//
-//    var i = 0
-//    while({i < avail.length}){
-//      println(avail(i))
-//      {
-//        i += 1;
-//      }
-//    }
-//  }
-//  availId()
-  }
-
 
