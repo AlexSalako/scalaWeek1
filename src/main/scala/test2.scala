@@ -3,13 +3,15 @@ import java.util.TimeZone.getAvailableIDs
 
 object test2 extends App {
 
-//  var greeting = "Hello "
-//  val input = readLine("What is your name?  ")
+  //  var greeting = "Hello "
+  //  val input = readLine("What is your name?  ")
 
   val availableId = getAvailableIDs
 
   var i = 0
-  while ( {i < availableId.length}) {
+  while ( {
+    i < availableId.length
+  }) {
     println(availableId(i))
 
     {
@@ -17,19 +19,6 @@ object test2 extends App {
     }
 
   }
-
-//  def availId() = {
-//    val avail = getAvailableIDs()
-//
-//    var i = 0
-//    while({i < avail.length}){
-//      println(avail(i))
-//      {
-//        i += 1;
-//      }
-//    }
-//  }
-//  availId()
-  }
+}
 
 
