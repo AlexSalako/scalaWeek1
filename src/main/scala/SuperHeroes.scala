@@ -30,7 +30,6 @@ object SuperHeroes {
     val goku = dragonBall.getOrElse("Goku", 0)
     println(dragonBall.keys)
     println(dragonBall.values)
-
     for((key, values) <- dragonBall) println(key + ": " + values)
 
 
